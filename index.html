@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Affirmations Generator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI Poem Generator</title>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>AI Positive Affirmation Generator</h1>
-        </header>
-    
-        <main>
-            <div class="form-container">
-                <form id="affirmation-generator-form">
-                    <input type="text" placeholder="Enter the topic of a Positive Affirmation" autofocus required autocomplete="off"
-                        class="instructions" id="user-instructions" />
-                    <input type="submit" class="submit-button" />
-                </form>
-                <div class="hint">i.e: Manifestation, Mindfulness, Visualization, or Meditation</div>
-            </div>
-            <div class="affirmation hidden" id="affirmation"></div>
-        </main>
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
 
-    <footer>
-        TThis AI project was coded by
-        <a href="https://github.com/dashboard" target="_blank">Ruth Jean-Philippe</a> and
-        is
-        <a href="https://github.com/RJP2024/Positive_Affirmations_Generator" target="_blank">
-            open-sourced on GitHub</a>
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a French poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Paris or Cheese</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/dashboard" target="_blank">Ruth Jean-Philippe</a>
         and is
-        <a href="https://elaborate-banoffee-78d70a.netlify.app" target="_blank">hosted on Netlify</a>.
-        
-    </footer>
+        <a
+          href="https://github.com/RJP2024/Positive_Affirmations_Generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://app.netlify.com/sites/elaborate-banoffee-78d70a/overview" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
-    <script src="index.js"></script>
-</body>
+    <script src="src/index.js"></script>
+  </body>
 </html>
